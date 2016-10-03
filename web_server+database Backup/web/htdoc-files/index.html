@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Food Entry</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>Food Entry</a></h1>
+		<form id="form_985220" class="appnitro" enctype="multipart/form-data" method="post" action="php_scripts/food_entry.php">
+					<div class="form_description">
+			<h2>Food Entry</h2>
+			<p>Please provide exact nutrition detail about the food.</p>
+		</div>						
+			<ul >
+			
+					<li class="section_break">
+			<h3>Food Detail:</h3>
+			<p></p>
+		</li>		<li id="li_1" >
+		<label class="description" for="f_name">* Food Name  </label>
+		<div>
+			<input id="element_1" name="f_name" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="guidelines" id="guide_1"><small>Enter the name of the Food, Always ensert uniqui food names</small></p> 
+		</li>		<li id="li_2" >
+		<label class="description" for="f_id">* Food ID </label>
+		<div>
+			<input id="f_id" name="f_id" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="guidelines" id="guide_2"><small>This ID can be found from the icon that you want to attach to food. Through this ID the food can be recognised. Do not put duplicate ID.</small></p> 
+		</li>		<li id="li_3" >
+		<label class="description" for="f_weight">* Wieght </label>
+		<div>
+			<input id="f_weight" name="f_weight" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="guidelines" id="guide_3"><small>Weight of the food that needs to be inserted. Based on this weight all the nutritions should be inserted.</small></p> 
+		</li>		<li id="li_17" >
+		<label class="description" for="f_description">Description:  </label>
+		<div>
+			<textarea id="f_description" name="f_description" class="element textarea medium"></textarea> 
+		</div> 
+		</li>		<li id="li_4" >
+		<label class="description" for="f_image">* Food Image </label>
+		<div>
+			<input id="f_image" name="f_image" class="element file" type="file"/> 
+		</div> <p class="guidelines" id="guide_4"><small>Please Upload small sized photo.</small></p> 
+		</li>		<li class="section_break">
+			<h3>Nutrition Detail:</h3>
+			<p></p>
+		</li>		<li id="li_6" >
+		<label class="description" for="n_chol">Cholesterol (gr) </label>
+		<div>
+			<input id="n_chol" name="n_chol" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_8" >
+		<label class="description" for="n_cal">Calories (cal) </label>
+		<div>
+			<input id="n_cal" name="n_cal" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="guidelines" id="guide_8"><small>Calories are counted in Calories. </small></p> 
+		</li>		<li id="li_7" >
+		<label class="description" for="n_fat">Fat (gr) </label>
+		<div>
+			<input id="n_fat" name="n_fat" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_12" >
+		<label class="description" for="n_sod">Sodium (gr) </label>
+		<div>
+			<input id="n_sod" name="n_sod" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_11" >
+		<label class="description" for="n_pot">Potassium (gr) </label>
+		<div>
+			<input id="n_pot" name="n_pot" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_10" >
+		<label class="description" for="n_carbo">Carbohydrate (gr) </label>
+		<div>
+			<input id="n_carbo" name="n_carbo" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_9" >
+		<label class="description" for="n_pro">Protein (gr) </label>
+		<div>
+			<input id="n_pro" name="n_pro" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_15" >
+		<label class="description" for="n_calc">Calcium (gr) </label>
+		<div>
+			<input id="n_calc" name="n_calc" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_14" >
+		<label class="description" for="n_ener">Energy (gr) </label>
+		<div>
+			<input id="n_ener" name="n_ener" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_13" >
+		<label class="description" for="n_iron">Iron (gr) </label>
+		<div>
+			<input id="n_iron" name="n_iron" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>
+			
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="985220" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+</html>
